@@ -1,0 +1,19 @@
+@import '../abstract/variables';
+
+html {
+    font-family: $font-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-title;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: $primary;
+}
