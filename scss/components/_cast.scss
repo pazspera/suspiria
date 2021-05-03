@@ -1,0 +1,25 @@
+.cast {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__actor {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    &__image {
+        border-radius: 50%;
+    }
+
+    &__name {
+        text-align: center;
+    }
+}
+
+// Hace que el cast pase a tener 3 actors por fila cuando pasa a tablet
+@media (min-width: 768px) {
+    .cast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

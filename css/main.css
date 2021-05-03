@@ -40,6 +40,39 @@ h2 {
   color: #813746;
 }
 
+.cast {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.cast__actor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+.cast__image {
+  border-radius: 50%;
+}
+
+.cast__name {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cast {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .hero {
   background-image: url(../img/hero-hands-floor.jpg);
   -o-object-fit: cover;
