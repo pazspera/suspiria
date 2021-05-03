@@ -39,6 +39,11 @@ h2 {
   color: #813746;
 }
 
+.hero {
+  height: 100vh;
+  background-image: url(../img/hands-floor-hd.jpg);
+}
+
 .container {
   width: 90%;
   max-width: 1250px;
