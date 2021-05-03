@@ -1,4 +1,7 @@
 .hero {
-    height: 100vh;
-    background-image: url(../img/hands-floor-hd.jpg);
+    background-image: url(../img/hero-hands-floor.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

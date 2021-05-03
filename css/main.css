@@ -19,6 +19,7 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 html {
@@ -40,8 +41,16 @@ h2 {
 }
 
 .hero {
-  height: 100vh;
-  background-image: url(../img/hands-floor-hd.jpg);
+  background-image: url(../img/hero-hands-floor.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.images img {
+  display: block;
 }
 
 .container {
@@ -52,6 +61,6 @@ h2 {
 
 footer {
   background-color: #0A0605;
-  padding: 2em 0;
+  padding: 3em 0;
 }
 /*# sourceMappingURL=main.css.map */
