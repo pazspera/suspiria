@@ -94,6 +94,21 @@ h2 {
   right: 5vw;
 }
 
+.hero__title {
+  position: absolute;
+  top: 10vh;
+  right: 0vw;
+  background-color: #0A0605;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-family: Martel, serif;
+}
+
+.hero h1 {
+  padding: 0.4em 0.8em;
+}
+
 @media (min-width: 768px) {
   .hero__logo {
     bottom: 15vh;
