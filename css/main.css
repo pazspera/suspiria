@@ -155,7 +155,7 @@ h6 {
 }
 
 .credits {
-  margin: 20vh auto 20vh auto;
+  margin: 10vh auto 10vh auto;
   padding: 1em;
   border: 5px solid #0A0605;
   background-color: #FFFFFF;
@@ -216,6 +216,9 @@ h6 {
     -ms-grid-column: 2;
     grid-area: c;
     width: 48vw;
+  }
+  .credits {
+    margin: 20vh auto 20vh auto;
   }
   .images {
     -ms-grid-row: 1;
