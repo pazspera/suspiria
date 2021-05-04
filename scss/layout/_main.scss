@@ -1,24 +1,35 @@
+.main {
+    padding: 1.5em 0 0 0;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 1.5em 0;
 }
 
 .synopsis {
     max-width: 85%;
     margin: 0 auto;
     line-height: 1.7;
-    padding-top: 1.5em;
+}
+
+.cast {
+    margin: 1.5em 0;
 }
 
 .credits {
-    margin: 0 auto;
+    margin: 2.5em auto 3em auto;
+    padding: 1em;
+    border: 5px solid $black;
+    background-color: $white;
     width: 70%;
     min-width: 300px;
     max-width: 450px;
-    padding: 2em;
-    border: 5px solid $black;
-    background-color: $white;
+    box-shadow: 20px 20px 0px 0px $primary;
+    -webkit-box-shadow: 20px 20px 0px 0px $primary;
+    -moz-box-shadow: 20px 20px 0px 0px $primary;
     
     &__title,
     &__cast {
@@ -26,19 +37,28 @@
         padding: 0;
     }
 
-    &__cast {
-        text-align: right;
-    }
-
     &__pair {
-        margin-bottom: 0.7em;
-        line-height: 1.8;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-bottom: 1.2em;
     }
+    
 }
 
+
+@media (min-width: 768px) {
+    .credits {
+        padding: 1.5em;
+        width: 85%;
+        
+
+        &__pair {
+            margin-bottom: 0.7em;
+            line-height: 1.8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
 
 // Arma las dos columnas de main en tamaños desktop
 @media (min-width: 1200px) {
@@ -47,15 +67,20 @@
         grid-template-columns: auto / repeat(2, 1fr);
         grid-template-areas: 
             'i c';
+        padding: 0;
     }
 
     .content {
         grid-area: c;
-        width: 50vw;
+        width: 48vw;
     }
 
     .images {
         grid-area: i;
         width: 50vw;
+    }
+
+    .cast {
+        margin: 0;
     }
 }

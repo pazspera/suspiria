@@ -65,6 +65,7 @@ h2 {
 
 .cast__name {
   text-align: center;
+  margin-top: 0.5em;
 }
 
 @media (min-width: 768px) {
@@ -110,6 +111,10 @@ h2 {
   margin: 0 auto;
 }
 
+.main {
+  padding: 1.5em 0 0 0;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,23 +125,30 @@ h2 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 1.5em 0;
 }
 
 .synopsis {
   max-width: 85%;
   margin: 0 auto;
   line-height: 1.7;
-  padding-top: 1.5em;
+}
+
+.cast {
+  margin: 1.5em 0;
 }
 
 .credits {
-  margin: 0 auto;
+  margin: 2.5em auto 3em auto;
+  padding: 1em;
+  border: 5px solid #0A0605;
+  background-color: #FFFFFF;
   width: 70%;
   min-width: 300px;
   max-width: 450px;
-  padding: 2em;
-  border: 5px solid #0A0605;
-  background-color: #FFFFFF;
+  box-shadow: 20px 20px 0px 0px #813746;
+  -webkit-box-shadow: 20px 20px 0px 0px #813746;
+  -moz-box-shadow: 20px 20px 0px 0px #813746;
 }
 
 .credits__title, .credits__cast {
@@ -144,22 +156,28 @@ h2 {
   padding: 0;
 }
 
-.credits__cast {
-  text-align: right;
+.credits__pair {
+  margin-bottom: 1.2em;
 }
 
-.credits__pair {
-  margin-bottom: 0.7em;
-  line-height: 1.8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .credits {
+    padding: 1.5em;
+    width: 85%;
+  }
+  .credits__pair {
+    margin-bottom: 0.7em;
+    line-height: 1.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -169,18 +187,22 @@ h2 {
     -ms-grid-columns: auto/(1fr)[2];
         grid-template-columns: auto/repeat(2, 1fr);
         grid-template-areas: 'i c';
+    padding: 0;
   }
   .content {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: c;
-    width: 50vw;
+    width: 48vw;
   }
   .images {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: i;
     width: 50vw;
+  }
+  .cast {
+    margin: 0;
   }
 }
 
