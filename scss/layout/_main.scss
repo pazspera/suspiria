@@ -1,0 +1,12 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .content {
+        width: 50vw;
+    }
+
+    .images {
+        width: 50vw;
+    }
+}
