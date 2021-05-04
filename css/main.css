@@ -136,7 +136,7 @@ h6 {
   font-size: 2.44rem;
   color: #813746;
   font-weight: bold;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.3em 0;
 }
 
 .content {
@@ -151,6 +151,7 @@ h6 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 2em 0;
+  margin: auto 0;
 }
 
 .synopsis {
