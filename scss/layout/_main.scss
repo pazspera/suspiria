@@ -1,12 +1,21 @@
 .main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
     .content {
         width: 50vw;
+        grid-area: c,
     }
 
     .images {
         width: 50vw;
+        grid-area: i;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        display: grid;
+        grid-template-columns: auto / repeat(2, 1fr);
+        grid-template-areas: 
+            'i c';
     }
 }

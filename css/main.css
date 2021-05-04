@@ -88,19 +88,13 @@ h2 {
 
 .hero__logo {
   position: absolute;
-  bottom: 10vh;
+  bottom: 8vh;
   right: 5vw;
-}
-
-@media (max-width: 360px) {
-  .hero {
-    background-image: url(../img/hands-floor-360.jpg);
-  }
 }
 
 @media (min-width: 768px) {
   .hero__logo {
-    bottom: 15vh;
+    bottom: 12vh;
     right: 5vw;
   }
 }
@@ -113,6 +107,26 @@ h2 {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.main .content {
+  width: 50vw;
+  grid-area: c;
+}
+
+.main .images {
+  width: 50vw;
+  grid-area: i;
+}
+
+@media (min-width: 1200px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto/(1fr)[2];
+        grid-template-columns: auto/repeat(2, 1fr);
+        grid-template-areas: 'i c';
+  }
 }
 
 footer {

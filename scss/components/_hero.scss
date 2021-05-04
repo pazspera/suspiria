@@ -12,20 +12,15 @@
 
     &__logo {
         position: absolute;
-        bottom: 10vh;
+        bottom: 8vh;
         right: 5vw;
     }
 }
 
-@media (max-width: 360px){
-    .hero {
-        background-image: url(../img/hands-floor-360.jpg);
-    }
-}
 
 @media (min-width: 768px) {
     .hero__logo {
-        bottom: 15vh;
+        bottom: 12vh;
         right: 5vw;
     }
 }
