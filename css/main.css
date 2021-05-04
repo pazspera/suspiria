@@ -75,12 +75,27 @@ h2 {
 
 .hero {
   position: relative;
+  height: 107vh;
+  margin-top: -5vh;
+  background-image: url(../img/hands-floor-2048.jpg);
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: 35% center;
+  background-repeat: no-repeat;
 }
 
 .hero__logo {
   position: absolute;
-  bottom: 15vh;
+  bottom: 10vh;
   right: 5vw;
+}
+
+@media (max-width: 360px) {
+  .hero {
+    background-image: url(../img/hands-floor-360.jpg);
+  }
 }
 
 @media (min-width: 768px) {
@@ -96,7 +111,7 @@ h2 {
 
 .container {
   width: 90%;
-  max-width: 1250px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
