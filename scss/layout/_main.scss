@@ -1,19 +1,19 @@
 .main {
-    padding: 1.5em 0 0 0;
+    padding: 3.5rem 0 0 0;
 
     &__title {
         font-size: 2.44rem;
         color: $primary;
         font-weight: bold;
-        margin-bottom: 0.5em;
+        margin: 0 0 0.5em 0;
     }
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 1.5em 0;
+    justify-content: flex-start;
+    padding: 2em 0;
 }
 
 .synopsis {
@@ -87,7 +87,7 @@
     }
 
     .credits {
-        margin: 20vh auto 20vh auto;
+        margin: 18vh auto 18vh auto;
     }
 
     .images {
