@@ -36,11 +36,6 @@ h6 {
   font-family: Martel, serif;
 }
 
-h2 {
-  text-transform: uppercase;
-  color: #813746;
-}
-
 .cast {
   display: -ms-grid;
   display: grid;
@@ -130,6 +125,13 @@ h2 {
   padding: 1.5em 0 0 0;
 }
 
+.main__title {
+  font-size: 2.44rem;
+  color: #813746;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,7 +146,6 @@ h2 {
 }
 
 .synopsis {
-  max-width: 85%;
   margin: 0 auto;
   line-height: 1.7;
 }
@@ -154,7 +155,7 @@ h2 {
 }
 
 .credits {
-  margin: 2.5em auto 3em auto;
+  margin: 20vh auto 20vh auto;
   padding: 1em;
   border: 5px solid #0A0605;
   background-color: #FFFFFF;
@@ -164,6 +165,12 @@ h2 {
   box-shadow: 20px 20px 0px 0px #813746;
   -webkit-box-shadow: 20px 20px 0px 0px #813746;
   -moz-box-shadow: 20px 20px 0px 0px #813746;
+}
+
+.credits__title {
+  text-transform: uppercase;
+  color: #813746;
+  font-weight: bold;
 }
 
 .credits__title, .credits__cast {
