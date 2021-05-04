@@ -74,12 +74,20 @@ h2 {
 }
 
 .hero {
-  background-image: url(../img/hero-hands-floor.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero__logo {
+  position: absolute;
+  bottom: 15vh;
+  right: 5vw;
+}
+
+@media (min-width: 768px) {
+  .hero__logo {
+    bottom: 15vh;
+    right: 5vw;
+  }
 }
 
 .images img {
