@@ -1,6 +1,6 @@
 .cast {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 
     &__actor {
         display: flex;
@@ -15,6 +15,13 @@
     &__name {
         text-align: center;
         margin-top: 0.5em;
+    }
+}
+
+// Default 1 solo fila en mobile, a los 600px pasan a ser dos, sino no se ven las imágenes
+@media(min-width: 600px) {
+    .cast {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

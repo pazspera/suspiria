@@ -39,8 +39,8 @@ h6 {
 .cast {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .cast__actor {
@@ -61,6 +61,13 @@ h6 {
 .cast__name {
   text-align: center;
   margin-top: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .cast {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 768px) {
@@ -122,7 +129,7 @@ h6 {
 }
 
 .main {
-  padding: 3.5rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .main__title {
