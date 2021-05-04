@@ -96,7 +96,7 @@ h2 {
 
 @media (min-width: 768px) {
   .hero__logo {
-    bottom: 12vh;
+    bottom: 15vh;
     right: 5vw;
   }
 }
@@ -250,5 +250,9 @@ h2 {
   color: #813746;
   text-decoration: none;
   font-weight: bolder;
+}
+
+.footer a:hover, .footer a:focus {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
